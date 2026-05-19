@@ -184,16 +184,19 @@
                     <p>Strict cold chain preservation utilizing monitored reefers for temperature-sensitive grocery commodities, food products, and meats.</p>
                 </div>
                 <div class="spec-card">
-                    <!-- USDOT Triskelion SVG Emblem -->
+                    <!-- USDOT Triskelion SVG Emblem (Perfected, Ringless Masked Version) -->
                     <svg viewBox="0 0 100 100" class="spec-icon" style="width: 40px; height: 40px; color: var(--color-primary); fill: currentColor; margin-bottom: 20px; display: inline-block;">
-                        <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="4.5" fill="none"/>
-                        <path id="dot-blade" d="M 50,50 
-                                 C 46,45 35,32 35,22 
-                                 C 35,10 47,2 50,2 
-                                 C 49,12 41,20 50,30 
-                                 C 53,33 55,42 50,50 Z"/>
-                        <use href="#dot-blade" transform="rotate(120, 50, 50)"/>
-                        <use href="#dot-blade" transform="rotate(240, 50, 50)"/>
+                        <defs>
+                            <path id="gentle-swoosh" d="M 50,50 C 42,46 25,32 15,15" fill="none" stroke="black" stroke-width="4.5" stroke-linecap="round"/>
+                            <mask id="triskelion-mask">
+                                <circle cx="50" cy="50" r="50" fill="white" />
+                                <use href="#gentle-swoosh" />
+                                <use href="#gentle-swoosh" transform="rotate(120, 50, 50)" />
+                                <use href="#gentle-swoosh" transform="rotate(240, 50, 50)" />
+                                <circle cx="50" cy="50" r="3.5" fill="black" />
+                            </mask>
+                        </defs>
+                        <circle cx="50" cy="50" r="45" fill="currentColor" mask="url(#triskelion-mask)"/>
                     </svg>
                     <h3>Hazardous Materials</h3>
                     <p>Certificate of Registration for registration year(s) 2025-2026.</p>

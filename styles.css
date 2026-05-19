@@ -143,11 +143,12 @@ a {
 
 /* Unbunch Top Bar on Mobile Viewports */
 @media (max-width: 576px) {
-    .top-bar-left {
-        display: none;
+    .top-bar {
+        font-size: 0.72rem;
     }
-    .top-bar-container {
-        justify-content: center;
+    .top-bar-left {
+        font-size: 0.72rem;
+        gap: 6px;
     }
 }
 

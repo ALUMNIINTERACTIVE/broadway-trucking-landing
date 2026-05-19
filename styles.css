@@ -143,6 +143,10 @@ a {
     cursor: pointer;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 /* Responsive Button Framework */
 .btn {
     display: inline-flex;

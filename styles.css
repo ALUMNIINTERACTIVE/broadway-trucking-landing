@@ -336,19 +336,19 @@ a {
     gap: 6px;
     padding: 5px 12px;
     border-radius: 4px;
-    background-color: var(--color-primary-light);
-    border: 1px solid rgba(114, 28, 36, 0.1);
+    background-color: #edfdf6;
+    border: 1px solid rgba(16, 185, 129, 0.2);
     font-size: 0.72rem;
     font-weight: 750;
     letter-spacing: 0.08em;
-    color: var(--color-primary);
+    color: #10b981;
     margin-bottom: 20px;
 }
 
 .badge-dot {
     width: 6px;
     height: 6px;
-    background-color: var(--color-primary);
+    background-color: #10b981;
     border-radius: 50%;
 }
 

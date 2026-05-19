@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const observerOptions = {
         threshold: 0.3,
-        rootMargin: '-80px 0px 0px 0px'
+        rootMargin: '-120px 0px 0px 0px'
     };
 
     const sectionObserver = new IntersectionObserver((entries) => {

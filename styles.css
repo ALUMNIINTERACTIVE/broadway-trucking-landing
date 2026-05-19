@@ -62,10 +62,64 @@ a {
     transition: var(--transition-smooth);
 }
 
+/* Maroon Top Utility Bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 38px;
+    background-color: var(--color-primary);
+    border-bottom: 1.5px solid var(--color-accent);
+    color: #ffffff;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    z-index: 101;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--color-accent-light);
+    letter-spacing: 0.02em;
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-link {
+    display: inline-flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.top-bar-link:hover {
+    color: var(--color-accent);
+}
+
+.top-bar-link i {
+    color: var(--color-accent);
+}
+
 /* Header & Menu */
 .header {
     position: fixed;
-    top: 0;
+    top: 38px;
     left: 0;
     width: 100%;
     height: 80px;
@@ -212,7 +266,7 @@ a {
    -------------------------------------------------------------------------- */
 .hero {
     position: relative;
-    padding: 150px 0 80px;
+    padding: 188px 0 80px;
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -790,10 +844,10 @@ a {
 
     .mobile-menu {
         position: fixed;
-        top: 80px;
+        top: 118px;
         left: 0;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 118px);
         background-color: #ffffff;
         z-index: 99;
         display: none;
